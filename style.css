@@ -4,6 +4,9 @@
     font-family: 'Poppins', sans-serif;
     color: #3A3A3A;
 }
+.check-btn{
+    display: none;
+}
 main{
     display: flex;
     justify-content: center;
@@ -66,6 +69,7 @@ main{
     height: 475px;
     width: 475px;
     background-image: url("./images/Circle\ design.svg");
+    background-size: cover;
 }
 .thumbnail>img{
     height: 414px;
@@ -212,4 +216,84 @@ footer{
 }
 .link>a>i{
     color: white;
+}
+
+@media screen and (max-width:660px){
+    .navbar{
+
+    }
+    .check-btn{
+        display: block;
+    }
+    .check-btn>a>.c-btn{
+        height: 3px;
+        width: 35px;
+        background-color: rebeccapurple;
+        margin: 8px 0px;
+    }
+    .navbrand{
+        text-align: center;
+    }
+    .navlink>a>i{
+        font-size: 30px;
+    }
+    .navlink>.link{
+        display:none;
+    }
+
+    .product{
+        height: auto;
+        margin: 10px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .product-description{
+        padding:0px 60px;
+    }
+    .order-btn{
+        position: relative;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+    }
+
+    .site{
+        flex-wrap: wrap;
+        width: 100%;
+        height: auto;
+        margin: 10px;
+        border: none;
+        
+    }
+    .site>img{
+        margin: 10px;
+        padding: 20px 10px;
+    }
+    .collection-container{
+        width: 100%;
+    }
+    .popular-products{
+        grid-template-columns: repeat(1,1fr);
+    }
+    
+    .featureProduct{
+        flex-direction: column-reverse;
+        width: 100%;
+        height: auto;
+    }
+    .productDesc{
+        text-align: center;
+        margin: 0;
+        padding: 10px;
+    }
+    .productThumb{
+        margin-top: 30px;
+    }
+    .productThumb>img{
+        width:300px;
+        height: 188px;
+    }
+    footer{
+        margin-top: 50px;
+    }
 }
